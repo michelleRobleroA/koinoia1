@@ -1,0 +1,605 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Brygada 1918', serif;
+}
+
+#header
+{
+    padding: 20px;
+    width: 100%;
+    background: #112d32;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+}
+
+#header #logo
+{
+    font-size: 20px;
+    padding-right: 900px;
+}
+
+/*sombreado al pasar el puntero por una de las opciones del menu*/
+#header nav a:hover
+{
+    opacity: 0.9;
+}
+
+.container
+{
+    background: #254E58;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    height: 575px;
+}
+
+.wave
+{
+    position: absolute;
+    width: 100%;
+    bottom: -140px;
+    opacity: 1;
+}
+
+/*-----------------------seccion de certificaciones de la empresa----------------------------------------*/
+.our-certs
+{
+    /*margin: 0 30px;
+    padding: 150px 200px;
+    position: relative;*/
+    margin-top: 70px;
+    margin: 20px 130px;
+    position: relative;
+    
+}
+
+.our-certs h3
+{
+    font-size: 28px;
+    /*margin-bottom: 15px;
+    margin-left: 480px;*/
+    margin-top: 150px;
+    margin-left: 530px;
+}
+
+.our-certs hr
+{
+    border: none;
+    height: 4px;
+    /*width: 270px;*/
+    width: 500px;
+    background: orange;
+    margin-left: 420px;
+    margin-bottom: 150px;
+}
+
+.our-certs-logos
+{
+    margin-left: 350px;
+    margin-top: 110px;
+    /*flex-direction: row;
+    margin-left: 180px;
+    padding-bottom: 30px;*/
+}
+
+.our-certs-logos a
+{
+    /*display: inline-block;
+    width: 14%;
+    padding: 55px 250px;
+    margin-right: 300px;
+    margin-top: 20px;
+    border: 1px solid #cacaca;
+    border-radius: 20px;*/
+    display: inline-block;
+    width: 14%;
+    padding-bottom: 15px;
+    margin-right: 180px;
+    margin-left: 20px;
+    margin-bottom: 70px;
+}
+
+/*----------------------------seccion inicial de la pagina----------------------------------------------*/
+.img-container
+{
+    /*max-width: 100%;*/
+    /*height: 465px;
+    width: 700px;*/
+    /*padding: 0 150px 0 10px;*/
+    width: 50%;
+}
+
+.img-container img
+{
+    width: 100%;
+    height: 90%;
+    padding-right: 20px;
+}
+
+.content-container
+{
+    /*padding-top: 140px;
+    flex-direction: column;
+    padding-left: 70px;
+    flex-basis: 50%;*/
+    width: 60%;
+    padding-left: 70px;
+    padding-top: 120px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-container h1
+{
+    color: aqua;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 0.9em;
+    margin-bottom: 30px;
+}
+
+.content-container h1 p
+{
+    line-height: 1.8em;
+}
+
+.container .content-container #aside
+{
+    background: #116466;
+}
+
+/*------------------ configuracion del boton explore now de la seccion inicial ----------------------------------*/
+.btn{
+    display: inline-block;
+
+    /*fondo del boton*/
+    background: #F56217;
+
+    /*color de letra del boton*/
+    color: #fff;
+
+    /*relleno de 8px top-bottom, 30px right-left*/
+    padding: 10px 30px;
+
+    /*30px top-bottom, 0 left-right*/
+    margin: 30px 0;
+
+    /*diseño redondo del boton*/
+    border-radius: 30px;
+
+    /*animacion al fondo del boton cuando pasa el cursor del mouse sobre él*/
+    transition: background 0.5s;
+}
+
+/*
+    Agregando un color al boton cuando el puntero del mouse lo "roce"
+*/
+.btn:hover{
+    background: #563434;
+}
+
+/*----------------------------"ola" para dividir la seccion de certificados------------------*/
+.wave2
+{
+    height: 280%;
+    width: 100%;
+    bottom: -160px;
+    opacity: 1;
+}
+
+/*-------------seccion de clientes satisfechos---------------------------------------*/
+h1.text
+{
+    margin-bottom: 100px;
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    /*margin-left: 45px;*/
+    margin-right: 60px;
+}
+
+.card1
+{
+    background: white;
+    height: 450px;
+    width: 382px;
+    position: absolute;
+    top: 295%;
+    left: 53%;
+    margin-bottom: 40px;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card-profile1
+{
+    height: 30%;
+    width: 100%;
+    background-image: linear-gradient(
+        45deg,
+        #88BDBC,
+        #254E58
+    );
+    position: absolute;
+    bottom: 0;
+    border-radius: 140px 140px 0 0;
+}
+
+.card-img1
+{
+    width: 30%;
+    border: 8px solid white;
+    box-sizing: content-box;
+    position: relative;
+}
+
+.card-name1
+{
+    color: white;
+    position: relative;
+    top: 32px;
+    font-family: Work Sans, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.card-text1
+{
+    padding: 0 25px;
+    position: absolute;
+    top: 115px;
+    font-size: 18px;
+    font-family: Work Sans, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 30px;
+    color: #00004d;
+}
+
+.card2
+{
+    background: white;
+    height: 450px;
+    width: 380px;
+    position: absolute;
+    top: 295%;
+    right: 58%;
+    margin-bottom: 40px;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card-profile2
+{
+    height: 30%;
+    width: 100%;
+    background-image: linear-gradient(
+        45deg,
+        #88BDBC,
+        #254E58
+    );
+    position: absolute;
+    bottom: 0;
+    border-radius: 140px 140px 0 0;
+}
+
+.card-img2
+{
+    width: 15%;
+    border: 8px solid white;
+    box-sizing: content-box;
+    position: relative;
+}
+
+.card-name2
+{
+    color: white;
+    position: relative;
+    font-family: Work Sans, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.card-text2
+{
+    padding: 0 25px;
+    position: absolute;
+    top: 115px;
+    font-size: 18px;
+    font-family: Work Sans, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 30px;
+    color: #00004d;
+}
+
+.card3
+{
+    background: white;
+    height: 450px;
+    width: 380px;
+    position: absolute;
+    top: 295%;
+    left: 88%;
+    margin-bottom: 40px;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card-profile3
+{
+    height: 30%;
+    width: 100%;
+    background-image: linear-gradient(
+        45deg,
+        #88BDBC,
+        #254E58
+    );
+    position: absolute;
+    bottom: 0;
+    border-radius: 140px 140px 0 0;
+}
+
+.card-img3
+{
+    width: 15%;
+    border: 8px solid white;
+    box-sizing: content-box;
+    position: relative;
+}
+
+.card-name3
+{
+    color: white;
+    position: relative;
+    top: 52px;
+    font-family: Work Sans, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.card-text3
+{
+    padding: 10px 25px;
+    position: absolute;
+    top: 100px;
+    font-size: 18px;
+    font-family: Work Sans, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 30px;
+    color: #00004d;
+}
+
+/*----------------------------"ola" para dividir la seccion de certificados------------------*/
+.wave3
+{
+    height: 150%;
+    width: 110%;
+    bottom: -140px;
+    margin-top: 320px;
+    opacity: 1;
+}
+
+/*------------seccion especializaciones-----------------------------*/
+.card-spec{
+    width: 20%;
+    display: inline-block;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 5px; 
+    margin: 2%;
+}
+
+.img-spec img{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px; 
+}
+
+.spec-title{
+    text-align: center;
+    padding: 10px;
+}
+  
+.spec-des{
+    padding: 3px;
+    text-align: center;
+   
+    padding-top: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.btn-spec{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding:10px;
+  }
+
+.btn-spec:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+/*----------------------------"ola" para dividir la seccion de certificados------------------*/
+.wave4
+{
+    height: 10%;
+    margin-bottom: 550px;
+    margin-top: 10px;
+    opacity: 1;
+}
+
+/*---------------seccion de servicios por categorías de la semana antepasada, pero con filtros 
+para ver ya sea: todos los servicios, categoría 1, categoría 2, o bien, categoría 3
+*/
+.container-services
+{
+    text-align: center;
+    background: #112D32;
+    width: 100%;
+    margin-bottom: 620px;
+    
+}
+
+input
+{
+    display: none;
+}
+
+.element
+{
+    font-size: 1.4rem;
+    margin: 1.5rem 0rem;
+    padding: 5px 1.8rem;
+    border-radius: 50px;
+    background: white;
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.img-services img
+{
+    margin: 10px 20px;
+}
+
+#cat1:checked ~ .img-services #cat2, #cat1:checked ~ .img-services #cat3
+{
+    display: none;
+}
+
+#cat2:checked ~ .img-services .cat1, #cat2:checked ~ .img-services #cat3
+{
+    display: none;
+}
+
+#cat3:checked ~ .img-services .cat1, #cat3:checked ~ .img-services #cat2
+{
+    display: none;
+}
+
+
+/* ---------------- Configuracion menu y que el menu sea sticky --------------------------------------*/
+#menuItems
+{
+    position: fixed;
+	height: 70px;
+    padding-left: 730px;
+    padding-top: 40px;
+}
+
+nav .links {
+	float: right;
+	padding: 0;
+	margin: 0;
+	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+	display: block;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: #112d32;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+
+/*------------- configuracion responsive para que el menu se vuelva pequeño mientras se disminuye 
+la pantalla -------------------------------------------------------------------------------------
+*/
+@media screen and (max-width: 768px) {
+	#header #logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: 60%;
+		height: 60%;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+
+	nav .links a {
+		font-size: 20px;
+	}
+
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+
+	nav .icon-burger {
+		display: block;
+	}
+
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+    
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+	
+}

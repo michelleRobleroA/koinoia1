@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koinoia Home Page</title>
+
+    <!--
+        Importamos la hoja de estilos style.css
+    -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 
+        Agregué una fuente llamada Brygada 1918 de google: 
+        https://fonts.google.com/specimen/Brygada+1918?preview.text_type=custom&selection.family=Brygada+1918:wght@400;500;600;700&sidebar.open=true
+        , y la propia página me brindó el codigo de las lineas 36-37
+    -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+    <!-- 
+        Estilo a al menos 4 elementos: 
+        1-. 
+        2-. 
+        3-. 
+        4-. 
+    -->
+    <style>
+
+        
+        /*
+            Dando color blanco a los hipervínculos
+        */
+        a{
+            /*
+                Quitando el subrayado con el valor de none a los hipervinculos.
+            */
+            text-decoration: none;
+            color: rgb(255, 252, 56);
+            margin-left: 85px;
+            font-weight: 900;
+        }
+        
+    </style>
+
+<body>
+
+    <div id="header">
+        <div id="logo">
+            <img src="/img/KoinoiaCleaningLogo.png" width="90px" height="100px" alt="Koinoia's Logo">
+
+            <!-- ### 1er atributo con estilo en línea ###-->
+            <h1 style="font-family: 'Brygada 1918', serif; 
+                color: white;">
+                Koinoia Cleaning</h1>
+
+        </div>
+
+        <nav id="menuItems">
+            <ul class="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Support</a></li>
+            </ul>
+
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+    </div>
+
+    <div class="container">
+
+        <div class="content-container">
+            <h1>Koinoia, the place were you are in the main place!</h1>
+
+            <!-- ### Aside para destacar informacion ###-->
+            <aside style="color:white; font-size: 25px; 
+            font-weight: bold;" id="aside"> 
+                <h2>
+                    We ONLY use hospital grade chemicals environmental friendly
+                </h2>
+            </aside>
+
+            <!-- ### 2do atributo con estilo en línea ###-->
+            <a href="" class="btn" style="color:white; font-size: 25px; 
+                font-weight: bold;
+            ">
+                Explore Now &#8618;
+            </a>
+        </div>
+
+        <div class="img-container">
+            <img src="img/cleaning.jpg" alt="Cleaning Home">
+        </div>
+    </div>
+
+    <!-- 
+        Seccion dividida por una division tipo "ola", la consegui
+        en: https://getwaves.io/
+    -->
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 220"><path fill="#112D32" fill-opacity="1" d="M0,160L1440,96L1440,320L0,320Z"></path></svg>
+
+    <!-- 
+        Seccion de certificados: 
+        1. Certificación Minority Women Business Enterprise Certified (M / WBE).
+        2. Miembro orgulloso de la Cámara de Comercio Hispana de Brooklyn (BHCC).
+    -->
+    <div class="our-certs">
+        <h3>Our Certifications</h3>
+        <hr>
+
+        <div class="our-certs-logos">
+            <a href="#"><img src="/img/cert1.jpg" alt=""></a>
+            <a href="#"><img src="/img/cert2.jpg" alt=""></a>
+        </div>
+    </div>
+
+    <svg class="wave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220"><path fill="#4F4A41" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,218.7C384,213,480,171,576,176C672,181,768,235,864,218.7C960,203,1056,117,1152,96C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+    <!--Seccion clientes satisfechos-->
+
+    <h1 class="text">
+        Our Happy Customers!
+    </h1>
+
+    <div class="card1">
+        <p class="card-text1">
+            I'm not dissapointed of the inversion I've made!
+        </p>
+
+        <div class="card-profile1">
+            <img src="/img/nyc_finance_logo.png" alt="NYC Finance Logo" class = "card-img1">
+            <h2 class="card-name1">
+                NYC Department of Finance
+            </h2>
+        </div>
+    </div>
+
+    <div class="card2">
+    
+        <div class="card-profile2">
+            <img src="/img/mta.png" alt="Metropolitan Transport Authority (MTA) Logo" class = "card-img2">
+            <h2 class="card-name2">
+                Metropolitan Transport Authority (MTA)
+            </h2>
+        </div>
+
+        <p class="card-text2">
+            I'm not dissapointed of the inversion I've made!
+        </p>
+    </div>
+
+
+    <div class="card3">
+    
+        <div class="card-profile3">
+            <img src="/img/willdan.jpg" alt="Willdan Logo" class = "card-img3">
+            <h2 class="card-name3">
+                Private Client: WILLDAN Electric
+            </h2>
+        </div>
+
+        <p class="card-text3">
+            I'm not dissapointed of the inversion I've made!
+        </p>
+    </div>
+
+
+    <svg class="wave3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#254E58" fill-opacity="1" d="M0,96L80,122.7C160,149,320,203,480,229.3C640,256,800,256,960,245.3C1120,235,1280,213,1360,202.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+
+    <div class="container-specialization-cards">
+        <h1 class="text">
+            Our skilled team and technician are specialized in:
+        </h1>
+        
+        <div class="card-spec">
+            <!--specialization 1-->
+            <div class="img-spec">
+                <img src="/img/specializations/marbleRest1.jpeg" alt="Marble Restoration" width="250px" height="250px">
+            </div>
+
+            <div class="spec-title">
+                <h2>Marble Restoration</h2>
+            </div>
+            <div class="spec-des">
+                <button class="btn-spec">Read More...</button>
+            </div>
+        </div>
+
+        <div class="card-spec">
+            <!--spec 2-->
+            <div class="img-spec">
+                <img src="/img/specializations/TerrazzoRest.jpg" alt="Terazzo Restoration" width="250px" height="250px">
+            </div>
+
+            <div class="spec-title">
+                <h2>Terazzo Restoration</h2>
+            </div>
+            <div class="spec-des">
+                <button class="btn-spec">Read More...</button>
+            </div>
+        </div>
+        
+        <div class="card-spec">
+                <!--spec 3-->
+                <div class="img-spec">
+                    <img src="/img/specializations/ConcreteStain.jpg" alt="Concrete Staining" width="250px" height="250px">
+                </div>
+    
+                <div class="spec-title">
+                    <h2>Concrete Staining</h2>
+                </div>
+                <div class="spec-des">
+                    <button class="btn-spec">Read More...</button>
+                </div>
+        </div>
+        
+        <div class="card-spec">
+            <!--spec 4-->
+            <div class="img-spec">
+                <img src="/img/specializations/epoxying.jpg" alt="Epoxying" width="250px" height="250px">
+            </div>
+
+            <div class="spec-title">
+                <h2>Epoxying</h2>
+            </div>
+            <div class="spec-des">
+                <button class="btn-spec">Read More...</button>
+            </div>
+        </div>
+
+        <div class="card-spec">
+            <!--spec 5-->
+            <div class="img-spec">
+                <img src="/img/specializations/polishing.jpg" alt="Polishing" width="250px" height="250px">
+            </div>
+
+            <div class="spec-title">
+                <h2>Polishing</h2>
+            </div>
+            <div class="spec-des">
+                <button class="btn-spec">Read More...</button>
+            </div>
+        </div>
+
+        <div class="card-spec">
+            <!--spec 6-->
+            <div class="img-spec">
+                <img src="/img/specializations/deepCleaning.jpg" alt="Deep Cleaning" width="250px" height="250px">
+            </div>
+
+            <div class="spec-title">
+                <h2>Deep Cleaning</h2>
+            </div>
+            <div class="spec-des">
+                <button class="btn-spec">Read More...</button>
+            </div>
+        </div>
+
+        <div class="card-spec">
+            <!--spec 7-->
+            <div class="img-spec">
+                <img src="/img/specializations/desinfecting.jpg" alt="Desinfecting" width="250px" height="250px">
+            </div>
+
+            <div class="spec-title">
+                <h2>Desinfecting</h2>
+            </div>
+            <div class="spec-des">
+                <button class="btn-spec">Read More...</button>
+            </div>
+        </div>
+
+        <div class="card-spec">
+            <!--spec 8-->
+            <div class="img-spec">
+                <img src="/img/specializations/metalCleaning.jpg" alt="Metal Cleaning" width="250px" height="250px">
+            </div>
+
+            <div class="spec-title">
+                <h2>Metal Cleaning</h2>
+            </div>
+            <div class="spec-des">
+                <button class="btn-spec">Read More...</button>
+            </div>
+        </div>
+
+        <div class="card-spec">
+            <!--spec 9-->
+            <div class="img-spec">
+                <img src="/img/specializations/steamCleaning.jpg" alt="Steam Cleaning" width="250px" height="250px">
+            </div>
+
+            <div class="spec-title">
+                <h2>Steam Cleaning</h2>
+            </div>
+            <div class="spec-des">
+                <button class="btn-spec">Read More...</button>
+            </div>
+        </div>
+
+        <div class="card-spec">
+            <!--spec 11-->
+            <div class="img-spec">
+                <img src="/img/specializations/stripFlooring.jpg" alt="Strip Flooring" width="250px" height="250px">
+            </div>
+
+            <div class="spec-title">
+                <h2>Strip Flooring</h2>
+            </div>
+            <div class="spec-des">
+                <button class="btn-spec">Read More...</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <svg class="wave4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#88BDBC" fill-opacity="1" d="M0,192L26.7,208C53.3,224,107,256,160,224C213.3,192,267,96,320,64C373.3,32,427,64,480,96C533.3,128,587,160,640,160C693.3,160,747,128,800,138.7C853.3,149,907,203,960,192C1013.3,181,1067,107,1120,90.7C1173.3,75,1227,117,1280,122.7C1333.3,128,1387,96,1413,80L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+
+    <div class="container-services">
+        <h1>
+            Services we offer:
+        </h1>
+
+        <input type="radio" id="all" name="radioBtn">
+        <input type="radio" id="cat1" name="radioBtn">
+        <input type="radio" id="cat2" name="radioBtn">
+        <input type="radio" id="cat3" name="radioBtn">
+        
+        <label for="all" class="element">All Services</label>
+        <label for="cat1" class="element">Building Maintenance</label>
+        <label for="cat2" class="element">Post Construction Clean Up</label>
+        <label for="cat3" class="element">Metal Cleaning</label>
+
+        <div class="img-services">
+            <img src="/img/services_category1/janitoralCleaning.jpg" alt="Janitoral Cleaning" width="220px" height="200px">
+
+            <img src="/img/services_category1/PresureWasher.jpg" alt="Presure Washer" width="220px" height="200px">
+
+            <img src="/img/services_category1/Spackling.jpg" alt="Spackling" width="220px" height="200px">
+            
+            <img src="/img/services_category1/woodStripping.jpg" alt="Wood Stripping" width="220px" height="200px">
+                
+            <img src="/img/services_category1/marbleCleaning.jpg" alt="Marble Cleaning" width="220px" height="200px">
+                
+            <img src="/img/services_category1/hardFloor.jpg" alt="Hard Floor" width="220px" height="200px">
+                
+            <img src="/img/services_category1/concretePolishing.jpg" alt="Concrete Polishing" width="220px" height="200px">
+                
+            <img src="/img/services_category1/concreteStaining.jpg" alt="Concrete Staining" width="220px" height="200px">
+            
+            <img src="/img/services_category1/damageRestoration.jpg" alt="Damage Restoration" width="220px" height="200px">
+            
+            <img src="/img/services_category1/sewageCamera.jpg" alt="Sewage Camera" width="220px" height="200px">
+
+            <img src="/img/services_category2/windowCleaning.jpg" alt="Window Cleaning" width="220px" height="200px">
+
+            <img src="/img/services_category2/carpetCleaning.jpg" alt="Carpet Cleaning" width="220px" height="200px">
+ 
+            <img src="/img/services_category3/terazzoCare.jpg" alt="Terazzo Care" width="220px" height="200px">
+        </div>
+        
+
+    </div>
+    
+
+    
+</body>
+</html>
