@@ -806,4 +806,15 @@ nav .icon-burger .line {
         bottom: -125px;
         opacity: 1;
     }
+
+    nav .links {
+        float: left;
+        padding: 0;
+        margin: 0;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
