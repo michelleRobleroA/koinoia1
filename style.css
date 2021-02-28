@@ -213,7 +213,7 @@ h1.text
 /*cliente #1*/
 .card1
 {
-    background: white;
+    background: radial-gradient(#ff4b1f,#ff9068);
     height: 450px;
     width: 382px;
     position: absolute;
@@ -274,7 +274,7 @@ h1.text
 /*cliente #2*/
 .card2
 {
-    background: white;
+    background: radial-gradient(#EECDA3,#EF629F);
     height: 450px;
     width: 380px;
     position: absolute;
@@ -333,7 +333,7 @@ h1.text
 /*cliente #3*/
 .card3
 {
-    background: white;
+    background: radial-gradient(#4CA1AF,#C4E0E5);
     height: 450px;
     width: 380px;
     position: absolute;
@@ -407,6 +407,7 @@ h1.text
     box-shadow: 2px 2px 20px black;
     border-radius: 5px; 
     margin: 2%;
+    background: radial-gradient(#2980b9,#2c3e50);
 }
 
 /* tamaño de las imagenes que contienen las especializaciones */
@@ -419,12 +420,13 @@ h1.text
 .spec-title{
     text-align: center;
     padding: 10px;
+    color: #fff;
 }
   
 .spec-des{
     padding: 3px;
     text-align: center;
-   
+    background: radial-gradient(#2980b9,#2c3e50);
     padding-top: 10px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -465,7 +467,7 @@ para ver ya sea: todos los servicios, categoría 1, categoría 2, o bien, catego
     text-align: center;
     background: #112D32;
     width: 100%;
-    height: 500px;
+    height: 800px;
     margin-bottom: 0px;
 }
 
@@ -473,7 +475,6 @@ para ver ya sea: todos los servicios, categoría 1, categoría 2, o bien, catego
 {
     margin: 0px;
     background: #112D32;
-    object-fit: contain;
 }
 
 /*configuracion para tamaño de la seccion de imagenes*/
@@ -489,12 +490,12 @@ para ver ya sea: todos los servicios, categoría 1, categoría 2, o bien, catego
 
 /*configuracion para que las imagenes de la categoria 1 se vean de forma horizontal y centrada*/
 .img-services .category1{    
-    margin-left: 107px;
+    /*margin-left: 107px;*/
     /*box-shadow: 0 4px 25px 3px rgba(0,0,0,.25);*/
     width: 90%;
     /*display: flex;
     flex-wrap: wrap;*/
-    align-items: center;
+    /*align-items: center;*/
 }
 
 /*configuracion para que las imagenes de la categoria 1 se vean de forma horizontal y centrada*/
@@ -504,7 +505,7 @@ para ver ya sea: todos los servicios, categoría 1, categoría 2, o bien, catego
     width: 90%;
     /*display: flex;
     flex-wrap: wrap;*/
-    align-items: center;
+    align-items: left;
 }
 
 /*configuracion para que las imagenes de la categoria 1 se vean de forma horizontal y centrada*/
@@ -514,7 +515,7 @@ para ver ya sea: todos los servicios, categoría 1, categoría 2, o bien, catego
     width: 90%;
     /*display: flex;
     flex-wrap: wrap;*/
-    align-items: center;
+    align-items: left;
 }
 
 #category1:checked ~ .img-services .category2, #category1:checked ~ .img-services .category3
@@ -727,6 +728,84 @@ nav .icon-burger .line {
 	margin: 5px;
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
+}
+
+@media only screen and (max-width: 600px)
+{
+    #header #logo {
+		font-size: 20px;
+        padding-right: 500px;
+        position: fixed;
+	}
+
+    .img-container
+    {
+        /*max-width: 100%;*/
+        /*height: 465px;
+        width: 700px;*/
+        /*padding: 0 150px 0 10px;*/
+        width: 50%;
+    }
+
+    .img-container img
+    {
+        width: 100%;
+        height: 90%;
+        padding-right: 10px;
+    }
+
+    .container
+    {
+        background: #254E58;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 200px;
+        height: 705px;
+        width: 1200px;
+    }
+
+    .content-container
+    {
+        /*padding-top: 140px;
+        flex-direction: column;
+        padding-left: 70px;
+        flex-basis: 50%;*/
+        width: 60%;
+        padding-left: 77px;
+        padding-top: 220px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content-container h1
+    {
+        color: aqua;
+        font-weight: 900;
+        font-size: 45px;
+        line-height: 0.9em;
+        margin-bottom: 3px;
+        padding-top: -200px;
+    }
+
+    .content-container h1 p
+    {
+        line-height: 1.8em;
+    }
+
+    .container .content-container #aside
+    {
+        background: #116466;
+    }
+
+    .wave
+    {
+        position: absolute;
+        width: 280%;
+        bottom: -125px;
+        opacity: 1;
+    }
 }
 
 /*------------- configuracion responsive para que el menu se vuelva pequeño mientras se disminuye la pantalla (intenté pero no me sirvió:((( )-------------------------------------------------------------------------------------
