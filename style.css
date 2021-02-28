@@ -67,18 +67,21 @@ junto con el aside y el boton de "explore now"*/
     /*margin: 0 30px;
     padding: 150px 200px;
     position: relative;*/
-    margin-top: 70px;
-    margin: 20px 130px;
-    position: relative;
     
+    margin-top: 70px;
+    margin: 90px 130px;
+    position: relative;
+    z-index: 2;
+    /*height: 150px;*/
 }
 
 .our-certs h3
 {
+    color: black;
     font-size: 28px;
     /*margin-bottom: 15px;
     margin-left: 480px;*/
-    margin-top: 150px;
+    margin-top: 165px;
     margin-left: 530px;
 }
 
@@ -90,7 +93,7 @@ junto con el aside y el boton de "explore now"*/
     width: 500px;
     background: orange;
     margin-left: 420px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .our-certs-logos
@@ -185,9 +188,11 @@ ese texto y el boton de "explore now"*/
 /*----------------------------"ola" para dividir la seccion de certificados------------------*/
 .wave2
 {
-    height: 280%;
+    /*height: 280%;*/
+    background: rgb(255,255,255);
+    position: absolute;
+    top: 1215px;
     width: 100%;
-    bottom: -160px;
     opacity: 1;
 }
 
@@ -212,8 +217,8 @@ h1.text
     height: 450px;
     width: 382px;
     position: absolute;
-    top: 295%;
-    left: 53%;
+    top: 1900px;
+    left: 200px;
     margin-bottom: 40px;
     transform: translate(-50%,-50%);
     box-shadow: 0 15px 40px rgba(0,0,0,0.1);
@@ -273,8 +278,8 @@ h1.text
     height: 450px;
     width: 380px;
     position: absolute;
-    top: 295%;
-    right: 58%;
+    top: 1900px;
+    right: 335px;
     margin-bottom: 40px;
     transform: translate(-50%,-50%);
     box-shadow: 0 15px 40px rgba(0,0,0,0.1);
@@ -332,8 +337,8 @@ h1.text
     height: 450px;
     width: 380px;
     position: absolute;
-    top: 295%;
-    left: 88%;
+    top: 1900px;
+    right: -170px;
     margin-bottom: 40px;
     transform: translate(-50%,-50%);
     box-shadow: 0 15px 40px rgba(0,0,0,0.1);
@@ -389,7 +394,7 @@ h1.text
 .wave3
 {
     height: 150%;
-    width: 110%;
+    width: 100%;
     bottom: -140px;
     margin-top: 320px;
     opacity: 1;
@@ -460,12 +465,14 @@ para ver ya sea: todos los servicios, categoría 1, categoría 2, o bien, catego
     text-align: center;
     background: #112D32;
     width: 100%;
-    margin-bottom: 620px;
+    height: 500px;
+    margin-bottom: 0px;
 }
 
 .img-services img
 {
     margin: 0px;
+    background: #112D32;
     object-fit: contain;
 }
 
@@ -484,9 +491,9 @@ para ver ya sea: todos los servicios, categoría 1, categoría 2, o bien, catego
 .img-services .category1{    
     margin-left: 107px;
     /*box-shadow: 0 4px 25px 3px rgba(0,0,0,.25);*/
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    width: 90%;
+    /*display: flex;
+    flex-wrap: wrap;*/
     align-items: center;
 }
 
@@ -494,9 +501,9 @@ para ver ya sea: todos los servicios, categoría 1, categoría 2, o bien, catego
 .img-services .category2{
     margin-left: 100px;
     /*box-shadow: 0 4px 25px 3px rgba(0,0,0,.25);*/
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    width: 90%;
+    /*display: flex;
+    flex-wrap: wrap;*/
     align-items: center;
 }
 
@@ -504,9 +511,9 @@ para ver ya sea: todos los servicios, categoría 1, categoría 2, o bien, catego
 .img-services .category3{
     margin-left: 100px;
     /*box-shadow: 0 4px 25px 3px rgba(0,0,0,.25);*/
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    width: 90%;
+    /*display: flex;
+    flex-wrap: wrap;*/
     align-items: center;
 }
 
@@ -545,6 +552,12 @@ de precios------------------*/
     opacity: 1;
 }
 
+.configPricing h1
+{
+    color: white;
+    text-align: center;
+}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -569,15 +582,106 @@ table th, td {
 /*contenedor del footer*/
 .footer_main
 {
-    background: #6E6658;
+    background: #254E58;
     padding-bottom: 4rem;
+}
+
+.social-logos
+{
+    margin: 0 -35px;
+}
+
+.footer .social-logos h2
+{
+    color: aquamarine;
+    font-weight: 300;
+    text-align: right;
 }
 
 .footer
 {
-    width: 80%;
-    height: 40vh;
-    
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer .footer2
+{
+    margin-top: 100px;
+}
+
+.footer-email-form
+{
+    margin-top: 100px;
+}
+
+.footer-heading
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading h2
+{
+    color: #fff;
+    margin: 0 100px;
+}
+
+.footer-heading a
+{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer-heading a:hover
+{
+    color: red;
+    transition: 0.3s ease-out;
+}
+
+.footer-email-form h2
+{
+    margin-bottom: 2rem;
+}
+
+#footer-email
+{
+    width: 250px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#footer-email::placeholder
+{
+    color: #b1b1b1;
+}
+
+#footer-email-btn
+{
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: red;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+#footer-email-btn:hover
+{
+    cursor:pointer;
+    background-color: #337AF1;
+    transition: all 0.4s ease-out;
 }
 
 /* ---------------- Configuracion del menu y que sea sticky --------------------------------------*/
