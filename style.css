@@ -557,7 +557,28 @@ table th, td {
     text-align: left;
     padding: 18px;
 }
-  
+
+.wave6
+{
+    height: 10%;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    opacity: 1;
+}
+
+/*contenedor del footer*/
+.footer_main
+{
+    background: #6E6658;
+    padding-bottom: 4rem;
+}
+
+.footer
+{
+    width: 80%;
+    height: 40vh;
+    
+}
 
 /* ---------------- Configuracion del menu y que sea sticky --------------------------------------*/
 #menuItems
@@ -604,15 +625,10 @@ nav .icon-burger .line {
 	transition: all .3s ease-in-out;
 }
 
-@media only screen and (max-width: 600px)
-{
-
-}
-
 /*------------- configuracion responsive para que el menu se vuelva pequeño mientras se disminuye la pantalla (intenté pero no me sirvió:((( )-------------------------------------------------------------------------------------
 */
 /*
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
 	#header #logo {
 		float: none;
 		width: auto;
