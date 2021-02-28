@@ -9,6 +9,8 @@ body
     font-family: 'Brygada 1918', serif;
 }
 
+/*header que posee el menu sticky y sus opciones y el logo y nombre de la 
+empresa*/
 #header
 {
     padding: 77px;
@@ -37,6 +39,9 @@ body
     opacity: 0.9;
 }
 
+
+/*contenedor que posee la imagen del principio (los detergentes) y el texto de bienvenida 
+junto con el aside y el boton de "explore now"*/
 .container
 {
     background: #254E58;
@@ -131,6 +136,8 @@ body
     padding-right: 20px;
 }
 
+/*contenedor que contiene el texto de bienvenida, junto con el aside luego de 
+ese texto y el boton de "explore now"*/
 .content-container
 {
     /*padding-top: 140px;
@@ -164,6 +171,7 @@ body
     background: #116466;
 }
 
+/*boton de la seccion del inicio, la que le sigue luego del menú sticky*/
 .btn
 {
     background: #000;
@@ -197,6 +205,7 @@ h1.text
     margin-right: 60px;
 }
 
+/*cliente #1*/
 .card1
 {
     background: white;
@@ -257,6 +266,7 @@ h1.text
     color: #00004d;
 }
 
+/*cliente #2*/
 .card2
 {
     background: white;
@@ -315,6 +325,7 @@ h1.text
     color: #00004d;
 }
 
+/*cliente #3*/
 .card3
 {
     background: white;
@@ -393,6 +404,7 @@ h1.text
     margin: 2%;
 }
 
+/* tamaño de las imagenes que contienen las especializaciones */
 .img-spec img{
     width: 100%;
     border-top-right-radius: 5px;
@@ -413,6 +425,7 @@ h1.text
     border-bottom-left-radius: 5px;
 }
 
+/*boton "read more..." de cada tarjeta de las especializaciones*/
 .btn-spec{
     margin-top: 40px;
     margin-bottom: 10px;
@@ -521,7 +534,7 @@ para ver ya sea: todos los servicios, categoría 1, categoría 2, o bien, catego
     display: none;
 }
 
-/* ---------------- Configuracion menu y que el menu sea sticky --------------------------------------*/
+/* ---------------- Configuracion del menu y que sea sticky --------------------------------------*/
 #menuItems
 {
     position: fixed;
@@ -566,8 +579,7 @@ nav .icon-burger .line {
 	transition: all .3s ease-in-out;
 }
 
-/*------------- configuracion responsive para que el menu se vuelva pequeño mientras se disminuye 
-la pantalla -------------------------------------------------------------------------------------
+/*------------- configuracion responsive para que el menu se vuelva pequeño mientras se disminuye la pantalla (intenté pero no me sirvió:((( )-------------------------------------------------------------------------------------
 */
 @media screen and (max-width: 768px) {
 	#header #logo {
