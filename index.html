@@ -33,7 +33,8 @@
         /*
             Dando color blanco a los hipervínculos
         */
-        a{
+        a
+        {
             /*
                 Quitando el subrayado con el valor de none a los hipervinculos.
             */
@@ -41,6 +42,12 @@
             color: rgb(255, 252, 56);
             margin-left: 85px;
             font-weight: 900;
+        }
+
+        .tagLabel
+        {
+            color: white;
+            margin: 0 10px;
         }
         
     </style>
@@ -330,16 +337,16 @@
         </h1>
     
         <input type="radio" name="filter" id="all" checked>
-        <label for="category1">All Services</label>
+        <label class="tagLabel" for="category1">All Services</label>
         
         <input type="radio" name="filter" id="category1">
-        <label for="all">Building Maintenance</label>
+        <label class="tagLabel" for="all">Building Maintenance</label>
 
         <input type="radio" name="filter" id="category2">
-        <label for="category2">Post Construction Clean Up</label>
+        <label class="tagLabel" for="category2">Post Construction Clean Up</label>
 
         <input type="radio" name="filter" id="category3">  
-        <label for="category3">Metal Cleaning and Maintenance</label>
+        <label class="tagLabel" for="category3">Metal Cleaning and Maintenance</label>
         
         <div class="img-services">
         
@@ -376,6 +383,43 @@
             </div>
             
         </div>
+
+
+        <!--#######Seccion tabla de precios, usando <table> responsive########-->
+        <svg class="wave5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#254E56" fill-opacity="1" d="M0,64L48,96C96,128,192,192,288,213.3C384,235,480,213,576,202.7C672,192,768,192,864,192C960,192,1056,192,1152,181.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+
+        <div style="overflow-x:auto;">
+            <table>
+              <tr>
+                <!--COLUMNAS DE LA TABLA-->
+                <th>PRICE</th>
+                <th>Services</th>
+                <th>Images</th>
+              </tr>
+
+              <tr>
+                <td>ENTERPRISE (Billed Anually)</td>
+                <td>$225,000 dollars</td>
+                <td>
+                    <img class="configImgTable" src="/img/send-money.png" alt="" 
+                    width="100px" height="100px">
+                </td>
+              </tr>
+
+              <tr>
+                <td>Need custom pricing or demo?</td>
+                <td>If you're interested <br> in additional services, <br> 
+                contact us
+                </td>
+                <td>
+                    <img class="configImgTable" src="/img/customer-support.png" alt=""
+                    width="100px" height="100px">
+                </td>
+                
+              </tr>
+            </table>
+        
     </div>
     
 </body>

@@ -482,7 +482,7 @@ para ver ya sea: todos los servicios, categoría 1, categoría 2, o bien, catego
 /*configuracion para que las imagenes de la categoria 1 se vean de forma horizontal y centrada*/
 .img-services .category1{    
     margin-left: 107px;
-    box-shadow: 0 4px 25px 3px rgba(0,0,0,.25);
+    /*box-shadow: 0 4px 25px 3px rgba(0,0,0,.25);*/
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -492,7 +492,7 @@ para ver ya sea: todos los servicios, categoría 1, categoría 2, o bien, catego
 /*configuracion para que las imagenes de la categoria 1 se vean de forma horizontal y centrada*/
 .img-services .category2{
     margin-left: 100px;
-    box-shadow: 0 4px 25px 3px rgba(0,0,0,.25);
+    /*box-shadow: 0 4px 25px 3px rgba(0,0,0,.25);*/
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -502,7 +502,7 @@ para ver ya sea: todos los servicios, categoría 1, categoría 2, o bien, catego
 /*configuracion para que las imagenes de la categoria 1 se vean de forma horizontal y centrada*/
 .img-services .category3{
     margin-left: 100px;
-    box-shadow: 0 4px 25px 3px rgba(0,0,0,.25);
+    /*box-shadow: 0 4px 25px 3px rgba(0,0,0,.25);*/
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -533,6 +533,30 @@ para ver ya sea: todos los servicios, categoría 1, categoría 2, o bien, catego
 {
     display: none;
 }
+
+/*----------------------------"ola" para dividir la seccion de tabla 
+de precios------------------*/
+.wave5
+{
+    height: 10%;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    opacity: 1;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    background: #88BDBC;
+}
+  
+table th, td {
+    text-align: left;
+    padding: 18px;
+}
+  
 
 /* ---------------- Configuracion del menu y que sea sticky --------------------------------------*/
 #menuItems
@@ -581,6 +605,7 @@ nav .icon-burger .line {
 
 /*------------- configuracion responsive para que el menu se vuelva pequeño mientras se disminuye la pantalla (intenté pero no me sirvió:((( )-------------------------------------------------------------------------------------
 */
+/*
 @media screen and (max-width: 768px) {
 	#header #logo {
 		float: none;
@@ -630,4 +655,4 @@ nav .icon-burger .line {
 		opacity: 0;
 	}
 	
-}
+}*/
