@@ -449,44 +449,30 @@ para ver ya sea: todos los servicios, categoría 1, categoría 2, o bien, catego
     width: 100%;
     margin-bottom: 620px;
 }
-/*
-input
-{
-    display: none;
-}
-
-.element1
-{
-    font-size: 1.4rem;
-    margin: 1.5rem 0rem;
-    padding: 5px 1.8rem;
-    border-radius: 50px;
-    background: white;
-    display: inline-block;
-    color: black;
-    cursor: pointer;
-    border: 1px solid #ccc;
-}*/
-
-
 
 .img-services img
 {
-    margin: 10px 20px;
+    margin: 0px;
 }
 
 /*configuracion para tamaño de la seccion de imagenes*/
 .img-services{
     max-width: 100%;
-    margin: 40px;
+    margin: 0px;
+}
+
+.img-services .category1 .img1
+{
+    padding: 0 20px;
 }
 
 /*configuracion para que las imagenes de la categoria 1 se vean de forma horizontal y centrada*/
 .img-services .category1{    
-    margin-left: 100px;
+    margin-left: 107px;
     box-shadow: 0 4px 25px 3px rgba(0,0,0,.25);
     width: 100%;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -495,7 +481,8 @@ input
     margin-left: 100px;
     box-shadow: 0 4px 25px 3px rgba(0,0,0,.25);
     width: 100%;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -504,11 +491,12 @@ input
     margin-left: 100px;
     box-shadow: 0 4px 25px 3px rgba(0,0,0,.25);
     width: 100%;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
-.category1:checked ~ .img-services .category2, .category1:checked ~ .img-services .category3
+#category1:checked ~ .img-services .category2, #category1:checked ~ .img-services .category3
 {
     display: none;
 }
@@ -518,7 +506,7 @@ input
     los elementos de las categorias 1 y 3 no se mostraran con el
     display: none    
 */
-.category2:checked ~ .img-services .category1, .category2:checked ~ .img-services .category3
+#category2:checked ~ .img-services .category1, #category2:checked ~ .img-services .category3
 {
     display: none;
 }
@@ -528,123 +516,10 @@ input
     los elementos de las categorias 1 y 2 no se mostraran con el
     display: none
 */
-.category3:checked ~ .img-services .category1, .category3:checked ~ .img-services .category2
+#category3:checked ~ .img-services .category1, #category3:checked ~ .img-services .category2
 {
     display: none;
 }
-
-/*
-#cat1:checked ~ .img-services #cat2, #cat1:checked ~ .img-services #cat3
-{
-    display: none;
-}
-
-#cat2:checked ~ .img-services .cat1, #cat2:checked ~ .img-services #cat3
-{
-    display: none;
-}
-
-#cat3:checked ~ .img-services .cat1, #cat3:checked ~ .img-services #cat2
-{
-    display: none;
-}*/
-/*
-#all
-{
-    display: none;
-}
-
-.element2
-{
-    display: inline-block;
-    margin-top: 12px;
-    background: red;
-}
-
-.categ2
-{
-    visibility: collapse;
-}
-
-#cat1
-{
-    display: none;
-}
-
-#all:checked ~ .categ2
-{
-    visibility: visible;
-}
-
-
-
-
-#cat2
-{
-    display: none;
-}
-
-#cat3
-{
-    display: none;
-}
-
-
-
-#element2
-{
-    display: inline-block;
-    margin-top: 12px;
-    background: red;
-}
-
-#element3
-{
-    display: inline-block;
-    margin-top: 12px;
-    background: red;
-}
-
-#element4
-{
-    display: inline-block;
-    margin-top: 12px;
-    background: red;
-}
-
-
-.sec1-img1
-{
-    display: flex;
-    overflow-x: auto;
-}
-
-#opc1
-{
-    display: none;
-}
-
-.img1
-{
-    visibility: collapse;
-}
-
-#tag1
-{
-    display: inline-block;
-    margin-top: 12px;
-    background: red;
-}
-
-#opc1:checked ~ .img1
-{
-    visibility: visible;
-}
-
-.prueba
-{
-    visibility: hidden;
-}*/
 
 /* ---------------- Configuracion menu y que el menu sea sticky --------------------------------------*/
 #menuItems
