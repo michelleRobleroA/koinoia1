@@ -466,6 +466,7 @@ para ver ya sea: todos los servicios, categoría 1, categoría 2, o bien, catego
 .img-services img
 {
     margin: 0px;
+    object-fit: contain;
 }
 
 /*configuracion para tamaño de la seccion de imagenes*/
@@ -601,6 +602,11 @@ nav .icon-burger .line {
 	margin: 5px;
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
+}
+
+@media only screen and (max-width: 600px)
+{
+
 }
 
 /*------------- configuracion responsive para que el menu se vuelva pequeño mientras se disminuye la pantalla (intenté pero no me sirvió:((( )-------------------------------------------------------------------------------------
