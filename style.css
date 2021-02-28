@@ -11,7 +11,7 @@ body
 
 #header
 {
-    padding: 20px;
+    padding: 77px;
     width: 100%;
     background: #112d32;
     text-align: center;
@@ -20,12 +20,15 @@ body
     justify-content: space-evenly;
     align-items: center;
     font-size: 20px;
+    position: fixed;
+    z-index: 3;
 }
 
 #header #logo
 {
     font-size: 20px;
     padding-right: 900px;
+    position: fixed;
 }
 
 /*sombreado al pasar el puntero por una de las opciones del menu*/
@@ -41,8 +44,8 @@ body
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 20px;
-    height: 575px;
+    padding-top: 90px;
+    height: 695px;
 }
 
 .wave
@@ -135,8 +138,8 @@ body
     padding-left: 70px;
     flex-basis: 50%;*/
     width: 60%;
-    padding-left: 70px;
-    padding-top: 120px;
+    padding-left: 77px;
+    padding-top: 220px;
     flex-direction: column;
     justify-content: center;
 }
@@ -148,6 +151,7 @@ body
     font-size: 45px;
     line-height: 0.9em;
     margin-bottom: 30px;
+    padding-top: -200px;
 }
 
 .content-container h1 p
@@ -160,32 +164,12 @@ body
     background: #116466;
 }
 
-/*------------------ configuracion del boton explore now de la seccion inicial ----------------------------------*/
-.btn{
-    display: inline-block;
-
-    /*fondo del boton*/
-    background: #F56217;
-
-    /*color de letra del boton*/
-    color: #fff;
-
-    /*relleno de 8px top-bottom, 30px right-left*/
-    padding: 10px 30px;
-
-    /*30px top-bottom, 0 left-right*/
-    margin: 30px 0;
-
-    /*diseño redondo del boton*/
-    border-radius: 30px;
-
-    /*animacion al fondo del boton cuando pasa el cursor del mouse sobre él*/
-    transition: background 0.5s;
+.btn
+{
+    background: #000;
+    border-radius: 10%;
 }
 
-/*
-    Agregando un color al boton cuando el puntero del mouse lo "roce"
-*/
 .btn:hover{
     background: #563434;
 }
@@ -226,7 +210,8 @@ h1.text
     box-shadow: 0 15px 40px rgba(0,0,0,0.1);
     border-radius: 10px;
     text-align: center;
-    overflow: hidden;
+    /*overflow: visible;*/
+
 }
 
 .card-profile1
@@ -449,7 +434,7 @@ h1.text
 .wave4
 {
     height: 10%;
-    margin-bottom: 550px;
+    margin-bottom: 0px;
     margin-top: 10px;
     opacity: 1;
 }
@@ -463,15 +448,14 @@ para ver ya sea: todos los servicios, categoría 1, categoría 2, o bien, catego
     background: #112D32;
     width: 100%;
     margin-bottom: 620px;
-    
 }
-
+/*
 input
 {
     display: none;
 }
 
-.element
+.element1
 {
     font-size: 1.4rem;
     margin: 1.5rem 0rem;
@@ -482,13 +466,74 @@ input
     color: black;
     cursor: pointer;
     border: 1px solid #ccc;
-}
+}*/
+
+
 
 .img-services img
 {
     margin: 10px 20px;
 }
 
+/*configuracion para tamaño de la seccion de imagenes*/
+.img-services{
+    max-width: 100%;
+    margin: 40px;
+}
+
+/*configuracion para que las imagenes de la categoria 1 se vean de forma horizontal y centrada*/
+.img-services .category1{    
+    margin-left: 100px;
+    box-shadow: 0 4px 25px 3px rgba(0,0,0,.25);
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+/*configuracion para que las imagenes de la categoria 1 se vean de forma horizontal y centrada*/
+.img-services .category2{
+    margin-left: 100px;
+    box-shadow: 0 4px 25px 3px rgba(0,0,0,.25);
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+/*configuracion para que las imagenes de la categoria 1 se vean de forma horizontal y centrada*/
+.img-services .category3{
+    margin-left: 100px;
+    box-shadow: 0 4px 25px 3px rgba(0,0,0,.25);
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+.category1:checked ~ .img-services .category2, .category1:checked ~ .img-services .category3
+{
+    display: none;
+}
+
+/*
+    if category2 (post construction clean up) is checked (seleccionada), 
+    los elementos de las categorias 1 y 3 no se mostraran con el
+    display: none    
+*/
+.category2:checked ~ .img-services .category1, .category2:checked ~ .img-services .category3
+{
+    display: none;
+}
+
+/*
+    if category3 (metal cleaning and maintenance) is checked (seleccionada), 
+    los elementos de las categorias 1 y 2 no se mostraran con el
+    display: none
+*/
+.category3:checked ~ .img-services .category1, .category3:checked ~ .img-services .category2
+{
+    display: none;
+}
+
+/*
 #cat1:checked ~ .img-services #cat2, #cat1:checked ~ .img-services #cat3
 {
     display: none;
@@ -502,8 +547,104 @@ input
 #cat3:checked ~ .img-services .cat1, #cat3:checked ~ .img-services #cat2
 {
     display: none;
+}*/
+/*
+#all
+{
+    display: none;
 }
 
+.element2
+{
+    display: inline-block;
+    margin-top: 12px;
+    background: red;
+}
+
+.categ2
+{
+    visibility: collapse;
+}
+
+#cat1
+{
+    display: none;
+}
+
+#all:checked ~ .categ2
+{
+    visibility: visible;
+}
+
+
+
+
+#cat2
+{
+    display: none;
+}
+
+#cat3
+{
+    display: none;
+}
+
+
+
+#element2
+{
+    display: inline-block;
+    margin-top: 12px;
+    background: red;
+}
+
+#element3
+{
+    display: inline-block;
+    margin-top: 12px;
+    background: red;
+}
+
+#element4
+{
+    display: inline-block;
+    margin-top: 12px;
+    background: red;
+}
+
+
+.sec1-img1
+{
+    display: flex;
+    overflow-x: auto;
+}
+
+#opc1
+{
+    display: none;
+}
+
+.img1
+{
+    visibility: collapse;
+}
+
+#tag1
+{
+    display: inline-block;
+    margin-top: 12px;
+    background: red;
+}
+
+#opc1:checked ~ .img1
+{
+    visibility: visible;
+}
+
+.prueba
+{
+    visibility: hidden;
+}*/
 
 /* ---------------- Configuracion menu y que el menu sea sticky --------------------------------------*/
 #menuItems
@@ -511,7 +652,7 @@ input
     position: fixed;
 	height: 70px;
     padding-left: 730px;
-    padding-top: 40px;
+    padding: 0;
 }
 
 nav .links {

@@ -55,7 +55,6 @@
             <h1 style="font-family: 'Brygada 1918', serif; 
                 color: white;">
                 Koinoia Cleaning</h1>
-
         </div>
 
         <nav id="menuItems">
@@ -85,13 +84,16 @@
                     We ONLY use hospital grade chemicals environmental friendly
                 </h2>
             </aside>
+            <br>
 
             <!-- ### 2do atributo con estilo en línea ###-->
-            <a href="" class="btn" style="color:white; font-size: 25px; 
+            
+            <a href="#" class="btn" style="color:white; font-size: 25px; 
                 font-weight: bold;
             ">
                 Explore Now &#8618;
             </a>
+            
         </div>
 
         <div class="img-container">
@@ -123,7 +125,6 @@
     <svg class="wave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220"><path fill="#4F4A41" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,218.7C384,213,480,171,576,176C672,181,768,235,864,218.7C960,203,1056,117,1152,96C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 
     <!--Seccion clientes satisfechos-->
-
     <h1 class="text">
         Our Happy Customers!
     </h1>
@@ -322,53 +323,108 @@
 
     <svg class="wave4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#88BDBC" fill-opacity="1" d="M0,192L26.7,208C53.3,224,107,256,160,224C213.3,192,267,96,320,64C373.3,32,427,64,480,96C533.3,128,587,160,640,160C693.3,160,747,128,800,138.7C853.3,149,907,203,960,192C1013.3,181,1067,107,1120,90.7C1173.3,75,1227,117,1280,122.7C1333.3,128,1387,96,1413,80L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
 
+    <!--###############Seccion servicios##################-->
     <div class="container-services">
-        <h1>
+        <h1 style="color:white;">
             Services we offer:
         </h1>
-
-        <input type="radio" id="all" name="radioBtn">
-        <input type="radio" id="cat1" name="radioBtn">
-        <input type="radio" id="cat2" name="radioBtn">
-        <input type="radio" id="cat3" name="radioBtn">
         
-        <label for="all" class="element">All Services</label>
-        <label for="cat1" class="element">Building Maintenance</label>
-        <label for="cat2" class="element">Post Construction Clean Up</label>
-        <label for="cat3" class="element">Metal Cleaning</label>
+        <!--
+        <input type="checkbox" name="" id="opc1">
+        <label for="opc1" id="tag1">All Services</label>
+        
+        
+        <label for="cat2" class="element2">Building Maintenance</label>
+        <label for="cat3" class="element3">Post Construction Clean Up</label>
+        <label for="cat4" class="element4">Metal Cleaning</label>-->
 
+        <input type="radio" name="filter" id="all" checked>
+        <label for="category1">All Services</label>
+
+        <input type="radio" name="filter" id="category1">
+        <label for="all">Building Maintenance</label>
+
+        <input type="radio" name="filter" id="category2">
+        <label for="category2">Post Construction Clean Up</label>
+
+        <input type="radio" name="filter" id="category3">  
+        <label for="category3">Metal Cleaning and Maintenance</label>
+        
         <div class="img-services">
-            <img src="/img/services_category1/janitoralCleaning.jpg" alt="Janitoral Cleaning" width="220px" height="200px">
 
-            <img src="/img/services_category1/PresureWasher.jpg" alt="Presure Washer" width="220px" height="200px">
+            <div class="category1">
+                <img class="img1" src="/img/services_category1/janitoralCleaning.jpg" alt="Janitoral Cleaning" width="220px" height="200px">
 
-            <img src="/img/services_category1/Spackling.jpg" alt="Spackling" width="220px" height="200px">
+                <img class="img1" src="/img/services_category1/PresureWasher.jpg" alt="Presure Washer" width="220px" height="200px">
+
+                <img class="img1" src="/img/services_category1/Spackling.jpg" alt="Spackling" width="220px" height="200px">
+                        
+                <img class="img1" src="/img/services_category1/woodStripping.jpg" alt="Wood Stripping" width="220px" height="200px">
+                            
+                <img class="img1" src="/img/services_category1/marbleCleaning.jpg" alt="Marble Cleaning" width="220px" height="200px">
+                            
+                <img class="img1" src="/img/services_category1/hardFloor.jpg" alt="Hard Floor" width="220px" height="200px">
+                            
+                <img class="img1" src="/img/services_category1/concretePolishing.jpg" alt="Concrete Polishing" width="220px" height="200px">
+                            
+                <img class="img1" src="/img/services_category1/concreteStaining.jpg" alt="Concrete Staining" width="220px" height="200px">
+                        
+                <img class="img1" src="/img/services_category1/damageRestoration.jpg" alt="Damage Restoration" width="220px" height="200px">
+                
+                <img class="img1" src="/img/services_category1/sewageCamera.jpg" alt="Sewage Camera" width="220px" height="200px">
+            </div>
             
-            <img src="/img/services_category1/woodStripping.jpg" alt="Wood Stripping" width="220px" height="200px">
-                
-            <img src="/img/services_category1/marbleCleaning.jpg" alt="Marble Cleaning" width="220px" height="200px">
-                
-            <img src="/img/services_category1/hardFloor.jpg" alt="Hard Floor" width="220px" height="200px">
-                
-            <img src="/img/services_category1/concretePolishing.jpg" alt="Concrete Polishing" width="220px" height="200px">
-                
-            <img src="/img/services_category1/concreteStaining.jpg" alt="Concrete Staining" width="220px" height="200px">
-            
-            <img src="/img/services_category1/damageRestoration.jpg" alt="Damage Restoration" width="220px" height="200px">
-            
-            <img src="/img/services_category1/sewageCamera.jpg" alt="Sewage Camera" width="220px" height="200px">
+            <div class="category2">
+                <img class="img2" src="/img/services_category2/windowCleaning.jpg" alt="Window Cleaning" width="220px" height="200px">
 
-            <img src="/img/services_category2/windowCleaning.jpg" alt="Window Cleaning" width="220px" height="200px">
-
-            <img src="/img/services_category2/carpetCleaning.jpg" alt="Carpet Cleaning" width="220px" height="200px">
- 
-            <img src="/img/services_category3/terazzoCare.jpg" alt="Terazzo Care" width="220px" height="200px">
+                <img class="img2" src="/img/services_category2/carpetCleaning.jpg" alt="Carpet Cleaning" width="220px" height="200px">
+            </div>
+           
+            <div class="category3">
+                <img class="img3" src="/img/services_category3/terazzoCare.jpg" alt="Terazzo Care" width="220px" height="200px">
+            </div>
+            
         </div>
-        
-
     </div>
     
+    
+    <!--<input type="checkbox" name="" id="opc1">
+    <label for="opc1" id="tag1">asdadas</label>
+    
+    <table>
+        <img class="img1" src="/img/services_category1/janitoralCleaning.jpg" alt="Janitoral Cleaning" width="220px" height="200px">
 
+    <img class="img1" src="/img/services_category1/PresureWasher.jpg" alt="Presure Washer" width="220px" height="200px">
+
+    <img class="img1" src="/img/services_category1/Spackling.jpg" alt="Spackling" width="220px" height="200px">
+            
+    <img class="img1" src="/img/services_category1/woodStripping.jpg" alt="Wood Stripping" width="220px" height="200px">
+                
+    <img class="img1" src="/img/services_category1/marbleCleaning.jpg" alt="Marble Cleaning" width="220px" height="200px">
+                
+    <img class="img1" src="/img/services_category1/hardFloor.jpg" alt="Hard Floor" width="220px" height="200px">
+                
+    <img class="img1" src="/img/services_category1/concretePolishing.jpg" alt="Concrete Polishing" width="220px" height="200px">
+                
+    <img class="img1" src="/img/services_category1/concreteStaining.jpg" alt="Concrete Staining" width="220px" height="200px">
+            
+    <img class="img1" src="/img/services_category1/damageRestoration.jpg" alt="Damage Restoration" width="220px" height="200px">
+            
+    <img class="img1" src="/img/services_category1/sewageCamera.jpg" alt="Sewage Camera" width="220px" height="200px">
+
+    <img class="img1" src="/img/services_category2/windowCleaning.jpg" alt="Window Cleaning" width="220px" height="200px">
+
+    <img class="img1" src="/img/services_category2/carpetCleaning.jpg" alt="Carpet Cleaning" width="220px" height="200px">
+ 
+    <img class="img1" src="/img/services_category3/terazzoCare.jpg" alt="Terazzo Care" width="220px" height="200px">
+    </>-->
+    
+
+
+
+    <p class="prueba" style="color:red; background: black; font-weight: 300;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, saepe!
+    </p>
     
 </body>
 </html>
